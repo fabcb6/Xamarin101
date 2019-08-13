@@ -53,11 +53,20 @@ namespace GorillaTest.ViewModel
             return instance;
         }
 
+        public static void DeleteInstance()
+        {
+            if (instance != null)
+            {
+                instance = null;
+            }
+        }
+
         #endregion
 
 
         #region INotifyPropertyChanged Implementation
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged(string propertyName)
         {
             if (propertyName != null)

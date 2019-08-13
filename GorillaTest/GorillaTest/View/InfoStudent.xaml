@@ -10,14 +10,24 @@
                    Placeholder="Enter Name"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Email" />
+            <Label Text="Lastname" />
              <Entry Text="" 
                    Placeholder="Enter Email"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Gender" />
+             <Entry Text="" 
+                   Placeholder="Enter Gender"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Label Text="Age" />
              <Entry Text="" 
                    Placeholder="Enter Age"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Detail" />
+             <Entry Text="" 
+                   Placeholder="Enter Detail"/>
         </StackLayout>
         <Button Text="Submit" />
     </StackLayout>
