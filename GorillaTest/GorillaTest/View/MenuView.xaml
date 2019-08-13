@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="GorillaTest.View.MenuView"
+             x:Name="MenuViewPage"
+             Title="Menu">
+    <StackLayout>
+        <StackLayout>
+            <Image Source="https://lindows.net/wp-content/uploads/2019/01/xamarin.png" />    
+        </StackLayout>
+        
+        <StackLayout>
+            <ListView  ItemsSource="{ Binding sourceData}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{ Binding Name }"
+                                  Detail="Este es el detail" 
+                                  Command="{Binding Path=BindingContext.SelectMenuCommand, Source={x:Reference MenuViewPage}}"
+                                  CommandParameter="{Binding Id}"
+                                  />
+                    </DataTemplate>
+                </ListView.ItemTemplate> 
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
